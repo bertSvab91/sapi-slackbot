@@ -40,6 +40,8 @@ var processEvent = function(event, context) {
   var channel = params['channel_name'];
   var commandText = params['text'];
 
+  // TODO: switch on command and actions for each command
+
   context.succeed({
     "response_type": "in_channel",
     text: user + " invoked " + command + " in " + channel + " with the following text: " + commandText
